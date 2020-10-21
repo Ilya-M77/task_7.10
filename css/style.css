@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Vollkorn+SC:wght@400;600;700;900&display=swap');
+
+body {
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #b1bfcc;
+    background: url(https://unsplash.com/photos/AM-Tkk_dkNU/download?force=true) bottom no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #008000;
+    text-shadow: 5px 5px #00004f;
+    font-size: 8rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.news {
+    background-color: white;
+    padding: 50px 0 32px;
+}
+
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    text-align: justify;
+    border-bottom: 1px solid #000000;
+    font-family: 'Vollkorn SC', serif;
+}
+
+article a {
+    color: #000000;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #408080;
+}
+
+article h2 {
+    font-family: 'Vollkorn SC', serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: #0000ff;
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: #bb0606;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: #0602fa;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+article:nth-child(-n+2) h2::before {
+    content: "NEW";
+    color: #bb0606;
+    font-size: 0.5em;
+    vertical-align: top;
+}
